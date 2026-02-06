@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router';
 
 const DashboardDefault = Loadable(lazy(() => import('@employer/views/Dashboard/Default')));
 const UtilsTypography = Loadable(lazy(() => import('@employer/views/Utils/Typography')));
-const SamplePage = Loadable(lazy(() => import('@employer/views/SamplePage')));
+
 const Jobs=Loadable(lazy(() => import('@employer/views/SamplePage/job')));
 const Applications=Loadable(lazy(() => import('@employer/views/SamplePage/applications')));
 const AddJob=Loadable(lazy(() => import('@employer/views/SamplePage/addJob')));

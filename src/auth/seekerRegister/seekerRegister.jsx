@@ -91,7 +91,7 @@ const AuthRegister = ({ ...rest }) => {
 
           axios
             .post('http://localhost:8000/auth/register',payload)
-            .then(() => navigate('/seeker-login'))
+            .then(() => navigate('/seekerlogin'))
             .catch((err) =>
               setErrors({ submit: err.response?.data?.message || 'Registration failed' })
             )
@@ -232,7 +232,7 @@ const AuthRegister = ({ ...rest }) => {
                 </Grid>
 
                 <Grid item xs={12}>
-                  <Button component={Link} to="/seeker-login" fullWidth>
+                  <Button component={Link} to="/seekerlogin" fullWidth>
                     Already have an account? Login
                   </Button>
                 </Grid>
