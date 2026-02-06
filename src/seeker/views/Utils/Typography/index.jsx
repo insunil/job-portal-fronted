@@ -7,7 +7,7 @@ import MuiTypography from '@mui/material/Typography';
 
 // project import
 import Breadcrumb from '@seeker/component/Breadcrumb';
-import { gridSpacing } from 'config.js';
+import { gridSpacing } from '@seeker/config.js';
 
 // ==============================|| TYPOGRAPHY ||============================== //
 

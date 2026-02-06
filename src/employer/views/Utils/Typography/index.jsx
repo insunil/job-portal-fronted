@@ -7,7 +7,7 @@ import MuiTypography from '@mui/material/Typography';
 
 // project import
 import Breadcrumb from '@employer/component/Breadcrumb';
-import { gridSpacing } from 'config.js';
+import { gridSpacing } from '../../../config';
 
 // ==============================|| TYPOGRAPHY ||============================== //
 

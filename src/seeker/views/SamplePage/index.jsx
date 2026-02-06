@@ -6,7 +6,7 @@ import { Card, CardHeader, CardContent, Divider, Grid, Typography } from '@mui/m
 
 // project import
 import Breadcrumb from '@seeker/component/Breadcrumb';
-import { gridSpacing } from 'config.js';
+import { gridSpacing } from '@seeker/config';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
