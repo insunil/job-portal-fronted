@@ -1,0 +1,26 @@
+.form-dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.form-dl dt {
+  font-weight: 600;
+  text-align: right;
+}
+
+.form-dl dd {
+  margin: 0;
+}
+
+/* Mobile friendly */
+@media (max-width: 576px) {
+  .form-dl {
+    grid-template-columns: 1fr;
+  }
+
+  .form-dl dt {
+    text-align: left;
+  }
+}
