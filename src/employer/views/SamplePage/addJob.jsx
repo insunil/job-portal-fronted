@@ -34,12 +34,12 @@ function AddJob() {
 
     onSubmit: (values) => {
       axios
-        .post("http://localhost:8000/jobs", values, {
+        .post("http://api.insunil.ind.in/jobs", values, {
           headers: { Authorization: `Bearer ${cookies.employer_token}` },
         })
         .then(() => {
           alert("Job added successfully");
-          navigate("/employer/job");
+          navigate("/employer");
         })
         .catch((err) => {
           alert(err.response?.data?.message || "Failed to add job");

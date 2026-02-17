@@ -111,7 +111,7 @@ const AuthLogin = ({ ...rest }) => {
           setSubmitting(true);
           const { email, password } = values;
           axios
-            .post('http://localhost:8000/auth/login', { email, password })
+            .post('http://api.insunil.ind.in/auth/login', { email, password })
             .then((res) => {
               console.log('LOGIN SUCCESS:', res);
                     if(res.data.user.role !== 'seeker'){

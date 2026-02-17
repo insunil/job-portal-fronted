@@ -34,7 +34,7 @@ import axios from "axios";
     }),
     onSubmit: (values) => {
       axios
-        .patch(`http://localhost:8000/jobs/${id}`, values, {
+        .patch(`http://api.insunil.ind.in/jobs/${id}`, values, {
           headers: {
             Authorization: `Bearer ${cookies.employer_token}`,
           },
@@ -51,7 +51,7 @@ import axios from "axios";
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/jobs/${id}`)
+      .get(`http://api.insunil.ind.in/jobs/${id}`)
       .then(res => {
         const job = res.data.job;
 

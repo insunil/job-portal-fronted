@@ -41,7 +41,7 @@ export function AllJob() {
     setLoading(true);
 
     axios
-      .get('http://localhost:8000/jobs/me', {
+      .get('http://api.insunil.ind.in/jobs/me', {
         headers: {
           Authorization: `Bearer ${cookies['seeker_token']}`
         },

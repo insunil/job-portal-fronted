@@ -13,7 +13,7 @@ export default function LandingPage() {
      
 
       <button className="m-2" onClick={() => navigate("/seeker-login")}>
-        User Login
+        seeker Login
       </button>
 
     

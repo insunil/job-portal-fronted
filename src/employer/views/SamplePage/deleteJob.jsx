@@ -12,7 +12,7 @@ function DeleteJob() {
   // 🔹 Fetch job details
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/jobs/${id}`)
+      .get(`http://api.insunil.ind.in/jobs/${id}`)
       .then((res) => {
         setJob(res.data.job); 
       })
@@ -24,7 +24,7 @@ function DeleteJob() {
  
   function remove() {
     axios
-      .delete(`http://localhost:8000/jobs/${id}`, {
+      .delete(`http://api.insunil.ind.in/jobs/${id}`, {
         headers: {
           Authorization: `Bearer ${cookies.employer_token}`,
         },

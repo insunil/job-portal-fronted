@@ -17,7 +17,7 @@ import { useCookies } from "react-cookie";
   const fetchJobs = (pageNumber = 1) => {
     console.log(`experience =${experience} page=${page} location =${location} limit=${limit}`)
     axios
-      .get("http://localhost:8000/jobs/me", {
+      .get("http://api.insunil.ind.in/jobs/me", {
         headers: {
           Authorization: `Bearer ${cookies['seeker_token']}`
         },

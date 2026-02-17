@@ -9,7 +9,7 @@ import { useCookies } from "react-cookie";
 
   
   function loadJobs() {
-    axios.get("http://localhost:8000/jobs/employer", {
+    axios.get("http://api.insunil.ind.in/jobs/employer", {
         headers: {
           Authorization: `Bearer ${cookies['employer_token']}`,
         },

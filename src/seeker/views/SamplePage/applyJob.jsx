@@ -24,7 +24,7 @@ function ApplyJob() {
     };
 
     axios.post(
-      "http://localhost:8000/applications",
+      "http://api.insunil.ind.in/applications",
       applicationData,
       { headers: {
       Authorization: `Bearer ${ cookies['seeker_token']}`,

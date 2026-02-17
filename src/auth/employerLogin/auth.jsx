@@ -110,7 +110,7 @@ const AuthLogin = ({ ...rest }) => {
           setSubmitting(true);
           const { email, password } = values;
           axios
-            .post('http://localhost:8000/auth/login', { email, password })
+            .post('http://api.insunil.ind.in/auth/login', { email, password })
             .then((res) => {
               console.log('LOGIN SUCCESS:', res);
                       if(res.data.user.role !== 'employer'){
@@ -120,7 +120,8 @@ const AuthLogin = ({ ...rest }) => {
                     setCookie('employer_token',res.data.token,{path:'/'});
                     setCookie('name',res.data.user.name,{path:'/'});
                      setCookie('role',res.data.user.role,{path:'/'})
-              navigate('/employer',{ replace: true });
+                      setCookie('companyId',res.data.user.companyId,{path:'/'})
+                       navigate('/employer',{ replace: true });
             })
             .catch((err) => {
               console.log("err");

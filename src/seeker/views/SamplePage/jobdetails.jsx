@@ -11,7 +11,7 @@ function JobDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/jobs/${params.id}`)
+      .get(`http://api.insunil.ind.in/jobs/${params.id}`)
       .then((res) => {
         setJob(res.data.job);
         setLoading(false);

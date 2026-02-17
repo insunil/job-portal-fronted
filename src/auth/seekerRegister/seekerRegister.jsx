@@ -90,7 +90,7 @@ const AuthRegister = ({ ...rest }) => {
             const { submit, ...payload } = values;
 
           axios
-            .post('http://localhost:8000/auth/register',payload)
+            .post('http://api.insunil.ind.in/auth/register',payload)
             .then(() => navigate('/seekerlogin'))
             .catch((err) =>
               setErrors({ submit: err.response?.data?.message || 'Registration failed' })

@@ -7,7 +7,7 @@ import { useCookies } from "react-cookie";
   const [cookies] = useCookies(["seeker_token"]);
 
   function loadApplications() {
-    axios.get("http://localhost:8000/applications/me", {
+    axios.get("http://api.insunil.ind.in/applications/me", {
       headers: {
         Authorization: `Bearer ${cookies['seeker_token']}`
       }

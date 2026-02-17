@@ -10,14 +10,14 @@ function Application() {
 
   
   function loadJobs() {
-    axios.get("http://localhost:8000/jobs")
+    axios.get("http://api.insunil.ind.in/jobs")
       .then(res => {
         setJobs(res.data.jobs);
       });
   }
 
   function loadApplicationwithoutId() {
-  axios.get(`http://localhost:8000/applications/employer`,{
+  axios.get(`http://api.insunil.ind.in/applications/employer`,{
         headers: {
        Authorization: `Bearer ${cookies['employer_token']}`
   },
@@ -34,7 +34,7 @@ function Application() {
   function loadApplications(jobId) {
     setSelectedJobId(jobId);
 
-    axios.get(`http://localhost:8000/applications/job/${jobId}`)
+    axios.get(`http://api.insunil.ind.in/applications/job/${jobId}`)
       .then(res => {
         setApps(res.data.applications);
         console.log(apps);
